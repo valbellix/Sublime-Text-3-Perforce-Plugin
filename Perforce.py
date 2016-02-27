@@ -38,7 +38,7 @@ def getP4Setting(setting):
     if window.project_file_name() != None:
         projData = window.project_data()
         if 'settings' in projData:
-            settings = projData
+            settings = projData['settings']
             if setting in settings:
                 value = settings[setting]
 
